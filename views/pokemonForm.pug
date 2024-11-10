@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h2 Registrar Nuevo Pokémon
+  form(action="/pokemon" method="POST" class="pokemon-form")
+    label(for="name") Nombre:
+    input(type="text" name="name" required)
+    label(for="type") Tipo:
+    input(type="text" name="type" placeholder="Tipos separados por comas" required)
+    label(for="abilities") Habilidades:
+    input(type="text" name="abilities" placeholder="Habilidades separadas por comas")
+    label(for="hp") HP:
+    input(type="number" name="stats.hp")
+    label(for="attack") Ataque:
+    input(type="number" name="stats.attack")
+    label(for="defense") Defensa:
+    input(type="number" name="stats.defense")
+    label(for="speed") Velocidad:
+    input(type="number" name="stats.speed")
+    label(for="moves") Movimientos:
+    input(type="text" name="moves" placeholder="Movimientos separados por comas")
+    label(for="imageUrl") URL de la Imagen:
+    input(type="text" name="imageUrl")
+    button(type="submit") Registrar Pokémon
+  a(href='/pokemon') Volver a la lista

@@ -1,0 +1,16 @@
+{
+  "name": "pokemon-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongoose": "^6.13.3",
+    "pug": "^3.0.3"
+  }
+}
